@@ -1,0 +1,160 @@
+import { CityData } from './types.js';
+
+// Comprehensive dataset of major world cities, travel destinations, capitals, and regional centers
+export const CITIES_DATA: CityData[] = [
+  // United Kingdom
+  { name: 'London', region: 'England', country: 'United Kingdom', lat: 51.5074, lng: -0.1278 },
+  { name: 'Manchester', region: 'England', country: 'United Kingdom', lat: 53.4808, lng: -2.2426 },
+  { name: 'Birmingham', region: 'England', country: 'United Kingdom', lat: 52.4862, lng: -1.8904 },
+  { name: 'Edinburgh', region: 'Scotland', country: 'United Kingdom', lat: 55.9533, lng: -3.1883 },
+  { name: 'Glasgow', region: 'Scotland', country: 'United Kingdom', lat: 55.8642, lng: -4.2518 },
+  { name: 'Liverpool', region: 'England', country: 'United Kingdom', lat: 53.4084, lng: -2.9916 },
+  { name: 'Bristol', region: 'England', country: 'United Kingdom', lat: 51.4545, lng: -2.5879 },
+  { name: 'Oxford', region: 'England', country: 'United Kingdom', lat: 51.7520, lng: -1.2577 },
+  { name: 'Cambridge', region: 'England', country: 'United Kingdom', lat: 52.2053, lng: 0.1218 },
+  { name: 'Bath', region: 'England', country: 'United Kingdom', lat: 51.3758, lng: -2.3599 },
+  { name: 'Cardiff', region: 'Wales', country: 'United Kingdom', lat: 51.4816, lng: -3.1791 },
+  { name: 'Belfast', region: 'Northern Ireland', country: 'United Kingdom', lat: 54.5973, lng: -5.9301 },
+  { name: 'Brighton', region: 'England', country: 'United Kingdom', lat: 50.8225, lng: -0.1372 },
+  { name: 'York', region: 'England', country: 'United Kingdom', lat: 53.9600, lng: -1.0873 },
+
+  // France
+  { name: 'Paris', region: 'Île-de-France', country: 'France', lat: 48.8566, lng: 2.3522 },
+  { name: 'Nice', region: 'Provence-Alpes-Côte d\'Azur', country: 'France', lat: 43.7102, lng: 7.2620 },
+  { name: 'Marseille', region: 'Provence-Alpes-Côte d\'Azur', country: 'France', lat: 43.2965, lng: 5.3698 },
+  { name: 'Lyon', region: 'Auvergne-Rhône-Alpes', country: 'France', lat: 45.7640, lng: 4.8357 },
+  { name: 'Bordeaux', region: 'Nouvelle-Aquitaine', country: 'France', lat: 44.8378, lng: -0.5792 },
+  { name: 'Cannes', region: 'Provence-Alpes-Côte d\'Azur', country: 'France', lat: 43.5528, lng: 7.0174 },
+  { name: 'Strasbourg', region: 'Grand Est', country: 'France', lat: 48.5734, lng: 7.7521 },
+  { name: 'Toulouse', region: 'Occitanie', country: 'France', lat: 43.6047, lng: 1.4442 },
+
+  // Italy
+  { name: 'Rome', region: 'Lazio', country: 'Italy', lat: 41.9028, lng: 12.4964 },
+  { name: 'Milan', region: 'Lombardy', country: 'Italy', lat: 45.4642, lng: 9.1900 },
+  { name: 'Florence', region: 'Tuscany', country: 'Italy', lat: 43.7696, lng: 11.2558 },
+  { name: 'Venice', region: 'Veneto', country: 'Italy', lat: 45.4408, lng: 12.3155 },
+  { name: 'Naples', region: 'Campania', country: 'Italy', lat: 40.8518, lng: 14.2681 },
+  { name: 'Bologna', region: 'Emilia-Romagna', country: 'Italy', lat: 44.4949, lng: 11.3426 },
+  { name: 'Amalfi', region: 'Campania', country: 'Italy', lat: 40.6340, lng: 14.6027 },
+  { name: 'Pisa', region: 'Tuscany', country: 'Italy', lat: 43.7228, lng: 10.4017 },
+  { name: 'Verona', region: 'Veneto', country: 'Italy', lat: 45.4384, lng: 10.9916 },
+
+  // Spain & Portugal
+  { name: 'Madrid', region: 'Madrid', country: 'Spain', lat: 40.4168, lng: -3.7038 },
+  { name: 'Barcelona', region: 'Catalonia', country: 'Spain', lat: 41.3874, lng: 2.1686 },
+  { name: 'Seville', region: 'Andalusia', country: 'Spain', lat: 37.3891, lng: -5.9845 },
+  { name: 'Valencia', region: 'Valencia', country: 'Spain', lat: 39.4699, lng: -0.3763 },
+  { name: 'Malaga', region: 'Andalusia', country: 'Spain', lat: 36.7213, lng: -4.4214 },
+  { name: 'Mallorca', region: 'Balearic Islands', country: 'Spain', lat: 39.6953, lng: 3.0176 },
+  { name: 'Ibiza', region: 'Balearic Islands', country: 'Spain', lat: 38.9067, lng: 1.4206 },
+  { name: 'Lisbon', region: 'Lisbon', country: 'Portugal', lat: 38.7223, lng: -9.1393 },
+  { name: 'Porto', region: 'Porto', country: 'Portugal', lat: 41.1579, lng: -8.6291 },
+  { name: 'Faro', region: 'Algarve', country: 'Portugal', lat: 37.0194, lng: -7.9307 },
+
+  // Germany, Switzerland & Austria
+  { name: 'Berlin', region: 'Berlin', country: 'Germany', lat: 52.5200, lng: 13.4050 },
+  { name: 'Munich', region: 'Bavaria', country: 'Germany', lat: 48.1351, lng: 11.5820 },
+  { name: 'Frankfurt', region: 'Hesse', country: 'Germany', lat: 50.1109, lng: 8.6821 },
+  { name: 'Hamburg', region: 'Hamburg', country: 'Germany', lat: 53.5511, lng: 9.9937 },
+  { name: 'Cologne', region: 'North Rhine-Westphalia', country: 'Germany', lat: 50.9375, lng: 6.9603 },
+  { name: 'Zurich', region: 'Zurich', country: 'Switzerland', lat: 47.3769, lng: 8.5417 },
+  { name: 'Geneva', region: 'Geneva', country: 'Switzerland', lat: 46.2044, lng: 6.1432 },
+  { name: 'Lucerne', region: 'Lucerne', country: 'Switzerland', lat: 47.0502, lng: 8.3093 },
+  { name: 'Interlaken', region: 'Bern', country: 'Switzerland', lat: 46.6863, lng: 7.8632 },
+  { name: 'Vienna', region: 'Vienna', country: 'Austria', lat: 48.2082, lng: 16.3738 },
+  { name: 'Salzburg', region: 'Salzburg', country: 'Austria', lat: 47.8095, lng: 13.0550 },
+
+  // Netherlands, Belgium, Ireland
+  { name: 'Amsterdam', region: 'North Holland', country: 'Netherlands', lat: 52.3676, lng: 4.9041 },
+  { name: 'Rotterdam', region: 'South Holland', country: 'Netherlands', lat: 51.9244, lng: 4.4777 },
+  { name: 'Brussels', region: 'Brussels', country: 'Belgium', lat: 50.8503, lng: 4.3517 },
+  { name: 'Bruges', region: 'Flanders', country: 'Belgium', lat: 51.2093, lng: 3.2247 },
+  { name: 'Dublin', region: 'Leinster', country: 'Ireland', lat: 53.3498, lng: -6.2603 },
+
+  // Greece, Turkey, Scandinavia
+  { name: 'Athens', region: 'Attica', country: 'Greece', lat: 37.9838, lng: 23.7275 },
+  { name: 'Santorini', region: 'Cyclades', country: 'Greece', lat: 36.3932, lng: 25.4615 },
+  { name: 'Mykonos', region: 'Cyclades', country: 'Greece', lat: 37.4467, lng: 25.3289 },
+  { name: 'Istanbul', region: 'Istanbul', country: 'Turkey', lat: 41.0082, lng: 28.9784 },
+  { name: 'Antalya', region: 'Antalya', country: 'Turkey', lat: 36.8969, lng: 30.7133 },
+  { name: 'Stockholm', region: 'Stockholm', country: 'Sweden', lat: 59.3293, lng: 18.0686 },
+  { name: 'Copenhagen', region: 'Capital Region', country: 'Denmark', lat: 55.6761, lng: 12.5683 },
+  { name: 'Oslo', region: 'Oslo', country: 'Norway', lat: 59.9139, lng: 10.7522 },
+  { name: 'Reykjavik', region: 'Capital Region', country: 'Iceland', lat: 64.1466, lng: -21.9426 },
+
+  // United States
+  { name: 'New York', region: 'New York', country: 'USA', lat: 40.7128, lng: -74.0060 },
+  { name: 'Los Angeles', region: 'California', country: 'USA', lat: 34.0522, lng: -118.2437 },
+  { name: 'San Francisco', region: 'California', country: 'USA', lat: 37.7749, lng: -122.4194 },
+  { name: 'Las Vegas', region: 'Nevada', country: 'USA', lat: 36.1699, lng: -115.1398 },
+  { name: 'Chicago', region: 'Illinois', country: 'USA', lat: 41.8781, lng: -87.6298 },
+  { name: 'Miami', region: 'Florida', country: 'USA', lat: 25.7617, lng: -80.1918 },
+  { name: 'Orlando', region: 'Florida', country: 'USA', lat: 28.5383, lng: -81.3792 },
+  { name: 'Seattle', region: 'Washington', country: 'USA', lat: 47.6062, lng: -122.3321 },
+  { name: 'Washington DC', region: 'District of Columbia', country: 'USA', lat: 38.9072, lng: -77.0369 },
+  { name: 'Boston', region: 'Massachusetts', country: 'USA', lat: 42.3601, lng: -71.0589 },
+  { name: 'Honolulu', region: 'Hawaii', country: 'USA', lat: 21.3069, lng: -157.8583 },
+  { name: 'Austin', region: 'Texas', country: 'USA', lat: 30.2672, lng: -97.7431 },
+  { name: 'San Diego', region: 'California', country: 'USA', lat: 32.7157, lng: -117.1611 },
+
+  // Canada
+  { name: 'Toronto', region: 'Ontario', country: 'Canada', lat: 43.6532, lng: -79.3832 },
+  { name: 'Vancouver', region: 'British Columbia', country: 'Canada', lat: 49.2827, lng: -123.1207 },
+  { name: 'Montreal', region: 'Quebec', country: 'Canada', lat: 45.5017, lng: -73.5673 },
+  { name: 'Calgary', region: 'Alberta', country: 'Canada', lat: 51.0447, lng: -114.0719 },
+  { name: 'Banff', region: 'Alberta', country: 'Canada', lat: 51.1784, lng: -115.5708 },
+
+  // India
+  { name: 'New Delhi', region: 'Delhi', country: 'India', lat: 28.6139, lng: 77.2090 },
+  { name: 'Mumbai', region: 'Maharashtra', country: 'India', lat: 19.0760, lng: 72.8777 },
+  { name: 'Bengaluru', region: 'Karnataka', country: 'India', lat: 12.9716, lng: 77.5946 },
+  { name: 'Goa', region: 'Goa', country: 'India', lat: 15.2993, lng: 74.1240 },
+  { name: 'Jaipur', region: 'Rajasthan', country: 'India', lat: 26.9124, lng: 75.7873 },
+  { name: 'Hyderabad', region: 'Telangana', country: 'India', lat: 17.3850, lng: 78.4867 },
+  { name: 'Chennai', region: 'Tamil Nadu', country: 'India', lat: 13.0827, lng: 80.2707 },
+  { name: 'Kolkata', region: 'West Bengal', country: 'India', lat: 22.5726, lng: 88.3639 },
+  { name: 'Ahmedabad', region: 'Gujarat', country: 'India', lat: 23.0225, lng: 72.5714 },
+  { name: 'Pune', region: 'Maharashtra', country: 'India', lat: 18.5204, lng: 73.8567 },
+  { name: 'Kochi', region: 'Kerala', country: 'India', lat: 9.9312, lng: 76.2673 },
+  { name: 'Udaipur', region: 'Rajasthan', country: 'India', lat: 24.5854, lng: 73.7125 },
+  { name: 'Agra', region: 'Uttar Pradesh', country: 'India', lat: 27.1767, lng: 78.0081 },
+  { name: 'Shimla', region: 'Himachal Pradesh', country: 'India', lat: 31.1048, lng: 77.1734 },
+  { name: 'Varanasi', region: 'Uttar Pradesh', country: 'India', lat: 25.3176, lng: 82.9739 },
+
+  // Middle East
+  { name: 'Dubai', region: 'Dubai', country: 'UAE', lat: 25.2048, lng: 55.2708 },
+  { name: 'Abu Dhabi', region: 'Abu Dhabi', country: 'UAE', lat: 24.4539, lng: 54.3773 },
+  { name: 'Doha', region: 'Doha', country: 'Qatar', lat: 25.2854, lng: 51.5310 },
+  { name: 'Riyadh', region: 'Riyadh', country: 'Saudi Arabia', lat: 24.7136, lng: 46.6753 },
+
+  // Asia Pacific
+  { name: 'Singapore', region: 'Singapore', country: 'Singapore', lat: 1.3521, lng: 103.8198 },
+  { name: 'Tokyo', region: 'Kanto', country: 'Japan', lat: 35.6762, lng: 139.6503 },
+  { name: 'Kyoto', region: 'Kansai', country: 'Japan', lat: 35.0116, lng: 135.7681 },
+  { name: 'Osaka', region: 'Kansai', country: 'Japan', lat: 34.6937, lng: 135.5023 },
+  { name: 'Bangkok', region: 'Bangkok', country: 'Thailand', lat: 13.7563, lng: 100.5018 },
+  { name: 'Phuket', region: 'Phuket', country: 'Thailand', lat: 7.8804, lng: 98.3923 },
+  { name: 'Bali', region: 'Bali', country: 'Indonesia', lat: -8.4095, lng: 115.1889 },
+  { name: 'Kuala Lumpur', region: 'Federal Territory', country: 'Malaysia', lat: 3.1390, lng: 101.6869 },
+  { name: 'Hong Kong', region: 'Hong Kong', country: 'Hong Kong', lat: 22.3193, lng: 114.1694 },
+  { name: 'Seoul', region: 'Seoul', country: 'South Korea', lat: 37.5665, lng: 126.9780 },
+  { name: 'Hanoi', region: 'Red River Delta', country: 'Vietnam', lat: 21.0285, lng: 105.8542 },
+  { name: 'Da Nang', region: 'South Central Coast', country: 'Vietnam', lat: 16.0544, lng: 108.2022 },
+
+  // Australia & New Zealand
+  { name: 'Sydney', region: 'New South Wales', country: 'Australia', lat: -33.8688, lng: 151.2093 },
+  { name: 'Melbourne', region: 'Victoria', country: 'Australia', lat: -37.8136, lng: 144.9631 },
+  { name: 'Brisbane', region: 'Queensland', country: 'Australia', lat: -27.4698, lng: 153.0251 },
+  { name: 'Perth', region: 'Western Australia', country: 'Australia', lat: -31.9505, lng: 115.8605 },
+  { name: 'Auckland', region: 'North Island', country: 'New Zealand', lat: -36.8485, lng: 174.7633 },
+  { name: 'Queenstown', region: 'South Island', country: 'New Zealand', lat: -45.0312, lng: 168.6626 },
+
+  // Americas & Others
+  { name: 'Cancun', region: 'Quintana Roo', country: 'Mexico', lat: 21.1619, lng: -86.8515 },
+  { name: 'Mexico City', region: 'CDMX', country: 'Mexico', lat: 19.4326, lng: -99.1332 },
+  { name: 'Rio de Janeiro', region: 'Rio de Janeiro', country: 'Brazil', lat: -22.9068, lng: -43.1729 },
+  { name: 'Buenos Aires', region: 'Buenos Aires', country: 'Argentina', lat: -34.6037, lng: -58.3816 },
+  { name: 'Cape Town', region: 'Western Cape', country: 'South Africa', lat: -33.9249, lng: 18.4241 },
+  { name: 'Cairo', region: 'Cairo', country: 'Egypt', lat: 30.0444, lng: 31.2357 },
+  { name: 'Nairobi', region: 'Nairobi', country: 'Kenya', lat: -1.2921, lng: 36.8219 }
+];

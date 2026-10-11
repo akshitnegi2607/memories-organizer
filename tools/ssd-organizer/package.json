@@ -1,0 +1,26 @@
+{
+  "name": "ssd-memory-organizer",
+  "version": "1.0.0",
+  "description": "High-performance Mac tool for sorting, deduplicating, and geotagging large phone photo/video backups",
+  "main": "src/index.ts",
+  "bin": {
+    "organize-memories": "./dist/index.js"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "test": "node --test"
+  },
+  "keywords": ["photos", "exif", "organizer", "heic", "geotag", "deduplication"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "exifr": "^7.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}

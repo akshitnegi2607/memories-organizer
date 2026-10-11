@@ -1,0 +1,68 @@
+# macOS System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Python Caches & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+
+# Node.js & TypeScript Build Artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Application Caches & Temporary Symlinks
+.cleaner_cache/
+*.log
+/tmp/cleaner_raw_symlinks
+
+# Media Files (Prevent committing heavy binary photos/videos to Git)
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.png
+*.PNG
+*.heic
+*.HEIC
+*.mov
+*.MOV
+*.mp4
+*.MP4
+*.m4v
+*.M4V
+*.cr2
+*.CR2
+*.cr3
+*.CR3
+*.dng
+*.DNG
+*.nef
+*.NEF
+*.arw
+*.ARW
+*.tif
+*.tiff
+*.webp
+*.gif
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
